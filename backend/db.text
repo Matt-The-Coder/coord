@@ -1,0 +1,8 @@
+CREATE TABLE `coords_data` (
+  `id` int(255) NOT NULL,
+  `notes` varchar(255) NOT NULL,
+  `lat` float NOT NULL,
+  `lng` float NOT NULL,
+  `created_at` date NOT NULL DEFAULT current_timestamp(),
+  `updated_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
+)
